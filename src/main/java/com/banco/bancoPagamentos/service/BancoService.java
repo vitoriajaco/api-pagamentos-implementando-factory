@@ -21,7 +21,6 @@ public class BancoService {
         CalculoPagamento pagamento = calculoPagamentoFactory.getCalculoPagamento(pagamentoModel.getStatus());
         BigDecimal valorpago = pagamento.calcularValorASerPago(pagamentoModel.getValorAPagar(), pagamentoModel.getDiferencaValor());
         pagamentoModel.setValorPago(valorpago);
-        //return pagamentosRepository.save(pagamentoModel);
         return pagamentoModel;
     }
 
@@ -34,7 +33,12 @@ public class BancoService {
     }
 
     public PagamentoModel alterar(PagamentoModel pagamentomodel){
-        //adicionar metodos
+        CalculoPagamentoFactory factory = new CalculoPagamentoFactory();
+        BigDecimal valor = factory.getCalculoPagamento(pagamentomodel.getStatus()).calcularValorASerPago(pagamentomodel);
+        pagamentomodel.getCodigo();
+        pagamentomodel.getValorAPagar();
+        pagamentomodel.getDiferencaValor();
+        pagamentomodel.setDiferencaValor(valor);
         return pagamentosRepository.save(pagamentomodel);
     }
 
