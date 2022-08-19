@@ -1,19 +1,14 @@
 package com.banco.bancoPagamentos.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "Pagamento")
+@NoArgsConstructor
 public class PagamentoModel {
     public PagamentoModel(String status, BigDecimal valorAPagar, BigDecimal diferencaValor) {
         this.status = status;

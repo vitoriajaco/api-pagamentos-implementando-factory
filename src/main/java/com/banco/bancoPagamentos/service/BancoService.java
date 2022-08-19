@@ -30,9 +30,23 @@ public class BancoService {
 
     public Optional<PagamentoModel> buscarId(Long codigo) {
         return pagamentosRepository.findById(codigo);
+
+
     }
 
-    public PagamentoModel alterar(PagamentoModel pagamentomodel){
+    public PagamentoModel cadastrarPagamento(PagamentoModel pagamentomodel) {
+        CalculoPagamentoFactory factory = new CalculoPagamentoFactory();
+        BigDecimal valor = factory.getCalculoPagamento(pagamentomodel.getStatus()).calcularValorASerPago(pagamentomodel);
+        pagamentomodel.getCodigo();
+        pagamentomodel.getValorAPagar();
+        pagamentomodel.getDiferencaValor();
+        pagamentomodel.setDiferencaValor(valor);
+        return pagamentosRepository.save(pagamentomodel);
+
+    }
+
+    public PagamentoModel alterarPagamento(PagamentoModel pagamentomodel){
+
         CalculoPagamentoFactory factory = new CalculoPagamentoFactory();
         BigDecimal valor = factory.getCalculoPagamento(pagamentomodel.getStatus()).calcularValorASerPago(pagamentomodel);
         pagamentomodel.getCodigo();
