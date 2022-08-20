@@ -1,8 +1,8 @@
-package com.banco.bancoPagamentos.model;
+package exercicio1.model;
 
-import com.banco.bancoPagamentos.model.calculoDesconto.CalculoPagamento;
-import com.banco.bancoPagamentos.model.calculoDesconto.CalculoPagamentoAtrasado;
-import com.banco.bancoPagamentos.model.calculoDesconto.CalculoPagamentoEmDia;
+import exercicio1.model.calculoDesconto.CalculoPagamento;
+import exercicio1.model.calculoDesconto.CalculoPagamentoAtrasado;
+import exercicio1.model.calculoDesconto.CalculoPagamentoEmDia;
 
 public class CalculoPagamentoFactory {
 

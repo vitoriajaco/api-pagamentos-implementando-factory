@@ -1,4 +1,4 @@
-package com.banco.bancoPagamentos.model;
+package exercicio1.model;
 
 import lombok.*;
 

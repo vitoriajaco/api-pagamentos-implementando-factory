@@ -1,9 +1,9 @@
-package com.banco.bancoPagamentos.service;
+package exercicio1.service;
 
-import com.banco.bancoPagamentos.model.CalculoPagamentoFactory;
-import com.banco.bancoPagamentos.model.PagamentoModel;
-import com.banco.bancoPagamentos.model.calculoDesconto.CalculoPagamento;
-import com.banco.bancoPagamentos.repository.PagamentosRepository;
+import exercicio1.model.CalculoPagamentoFactory;
+import exercicio1.model.PagamentoModel;
+import exercicio1.model.calculoDesconto.CalculoPagamento;
+import exercicio1.repository.PagamentosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

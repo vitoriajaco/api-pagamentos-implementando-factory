@@ -1,7 +1,7 @@
-package com.banco.bancoPagamentos.controller;
+package exercicio1.controller;
 
-import com.banco.bancoPagamentos.model.PagamentoModel;
-import com.banco.bancoPagamentos.service.BancoService;
+import exercicio1.model.PagamentoModel;
+import exercicio1.service.BancoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

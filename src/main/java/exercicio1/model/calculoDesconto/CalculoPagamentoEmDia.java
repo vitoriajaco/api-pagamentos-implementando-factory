@@ -1,7 +1,6 @@
-package com.banco.bancoPagamentos.model.calculoDesconto;
+package exercicio1.model.calculoDesconto;
 
-import com.banco.bancoPagamentos.model.PagamentoModel;
-import com.banco.bancoPagamentos.model.calculoDesconto.CalculoPagamento;
+import exercicio1.model.PagamentoModel;
 
 import java.math.BigDecimal;
 

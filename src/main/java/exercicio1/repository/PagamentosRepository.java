@@ -1,6 +1,6 @@
-package com.banco.bancoPagamentos.repository;
+package exercicio1.repository;
 
-import com.banco.bancoPagamentos.model.PagamentoModel;
+import exercicio1.model.PagamentoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
