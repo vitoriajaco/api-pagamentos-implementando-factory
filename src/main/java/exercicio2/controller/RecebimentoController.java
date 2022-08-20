@@ -15,7 +15,7 @@ public class RecebimentoController {
     @Autowired
     private RecebimentoService recebimentoService;
 
-    @GetMapping(path = "/recebimento/{codigo}")
+    @GetMapping(path = "/recebimento")
     public List<RecebimentoModel> procurarTodosRecebimentos() {
         return recebimentoService.mostrarTodosRecebimentos();
     }

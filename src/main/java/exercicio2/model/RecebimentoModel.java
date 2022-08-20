@@ -15,6 +15,7 @@ public class RecebimentoModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
 
+    @Column
     private String modalidadeRecebimento;
 
     @Column
